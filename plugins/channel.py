@@ -17,4 +17,5 @@ async def media(bot, message):
 
     media.file_type = file_type
     media.caption = message.caption
-    await save_file(media)
+    iddo = message.message_id
+    await save_file(media,iddo)
