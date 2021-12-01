@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQue
 from database.ia_filterdb import get_search_results
 from utils import is_subscribed, get_size
 from info import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
-
+from shorten import shortener
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or AUTH_CHANNEL else CACHE_TIME
 
@@ -42,6 +42,7 @@ async def answer(bot, query):
         size=get_size(file.file_size)
         msgid=file.msg_id 
         urll="http://3.15.154.251:8080/VIj/"+str(msgid)+"/"+title
+        final_urll=shortener(urll)
         f_caption=file.caption
         if CUSTOM_FILE_CAPTION:
             try:
