@@ -104,8 +104,7 @@ async def start(client, message):
     f_caption=files.caption
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('Request movies ', url='https://t.me/+OS6KCS7d8G4wOWE1')
+            InlineKeyboardButton('Request movies / Report Bugs', url='https://t.me/+OS6KCS7d8G4wOWE1')
         ]
         ]
     if CUSTOM_FILE_CAPTION:
