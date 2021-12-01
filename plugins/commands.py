@@ -101,7 +101,7 @@ async def start(client, message):
     files = files_[0]
     title = files.file_name
     msgid = files.msg_id
-    urll="http://3.15.154.251:8080/VIj/"+msgid+"/"+title
+    urll="http://3.15.154.251:8080/VIj/"+str(msgid)+"/"+title
     size=get_size(files.file_size)
     f_caption=files.caption
     buttons = [
