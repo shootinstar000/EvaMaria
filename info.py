@@ -40,11 +40,6 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Bratflix_files')
 FILE_CAPTION = """
 <b>{file_name}</b> 
 <br>
-<b>Slow telegram files</b>
-click here 👇
-
-[🚀High speed Download link🚀](http://3.15.154.251:8080/VIj/{file_id}/{file_name}) 
-
 ┏━━━━━━━━━━━━━━┓
  ➠Size: {file_size} 
 ┗━━━━━━━━━━━━━━┛ 
@@ -52,6 +47,7 @@ click here 👇
 <br> 
 👉[Click here](https://t.me/screenshotit_bot) to know the language of the file
 <br>
+📌If u see 👉  <b>_PART_0001 or _PART_0002</b> at the end of file name then don't download the file Search different files
 ✪༺ ──•◈•─ ─•◈•──༻✪
 <code>Join [bratflix ](https://t.me/bratflix) for more useful backup</b> 
 <code>
