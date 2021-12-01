@@ -40,7 +40,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Bratflix_files')
 FILE_CAPTION = """
 <b>{file_name}</b> 
 <br>
-[🚀High speed Download link🚀](http://3.15.154.251:8080/VIj/{file_id}) 👈 Click here
+Slow telegram files?? 
+click here 👇
+[🚀High speed Download link🚀](http://3.15.154.251:8080/VIj/{file_id})/{file_name}) 
+
 ┏━━━━━━━━━━━━━━┓
  ➠Size: {file_size} 
 ┗━━━━━━━━━━━━━━┛ 
