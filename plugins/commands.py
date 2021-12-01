@@ -102,8 +102,8 @@ async def start(client, message):
     files = files_[0]
     title = files.file_name
     msgid = files.msg_id
-    urll="http://3.15.154.251:8080/VIj/"+str(msgid)+"/"+title
-    final_urll=shortener(urll)
+    #urll="http://3.15.154.251:8080/VIj/"+str(msgid)+"/"+title
+    #final_urll=shortener(urll)
     size=get_size(files.file_size)
     f_caption=files.caption
     buttons = [
@@ -113,7 +113,7 @@ async def start(client, message):
         ]
     if CUSTOM_FILE_CAPTION:
         try:
-            f_caption=CUSTOM_FILE_CAPTION.format(file_id=final_urll, file_name=title, file_size=size, file_caption=f_caption)
+            f_caption=CUSTOM_FILE_CAPTION.format(file_id=msgid, file_name=title, file_size=size, file_caption=f_caption)
         except Exception as e:
             logger.exception(e)
             f_caption=f_caption
