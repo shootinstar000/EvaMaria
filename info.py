@@ -40,6 +40,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Bratflix_files')
 FILE_CAPTION = """
 <b>{file_name}</b> 
 <br>
+{file_id}
 ┏━━━━━━━━━━━━━━┓
  ➠Size: {file_size} 
 ┗━━━━━━━━━━━━━━┛ 
