@@ -102,6 +102,12 @@ async def start(client, message):
     title = files.file_name
     size=get_size(files.file_size)
     f_caption=files.caption
+    buttons = [
+        [
+            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query),
+            InlineKeyboardButton('Request movies ', url='https://t.me/+OS6KCS7d8G4wOWE1')
+        ]
+        ]
     if CUSTOM_FILE_CAPTION:
         try:
             f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
@@ -114,6 +120,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup(buttons)
         )
                     
 
