@@ -40,15 +40,13 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Bratflix_files')
 FILE_CAPTION = """
 <b>{file_name}</b> 
 <br>
-{file_id}
+[🚀High speed Download link🚀](http://3.15.154.251:8080/VIj/{file_id}) to know the language of the file
 ┏━━━━━━━━━━━━━━┓
  ➠Size: {file_size} 
 ┗━━━━━━━━━━━━━━┛ 
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰ 
 <br> 
 👉[Click here](https://t.me/screenshotit_bot) to know the language of the file
-<br>
-<br> 
 <br>
 ✪༺ ──•◈•─ ─•◈•──༻✪
 <code>Join [bratflix ](https://t.me/bratflix) for more useful backup</b> 
