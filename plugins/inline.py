@@ -41,11 +41,11 @@ async def answer(bot, query):
         title=file.file_name
         size=get_size(file.file_size)
         msgid=file.msg_id 
-        urll="http://3.15.154.251:8080/VIj/"+str(msgid)+"/"+title
+        #urll="http://3.15.154.251:8080/VIj/"+str(msgid)+"/"+title
         f_caption=file.caption
         if CUSTOM_FILE_CAPTION:
             try:
-                f_caption=CUSTOM_FILE_CAPTION.format(file_id="Not available in inline mode😴", file_name=title, file_size=size, file_caption=f_caption)
+                f_caption=CUSTOM_FILE_CAPTION.format(file_id=msgid, file_name=title, file_size=size, file_caption=f_caption)
             except Exception as e:
                 logger.exception(e)
                 f_caption=f_caption
