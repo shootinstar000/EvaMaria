@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = "bratflix_search"
 API_ID = 2557747 
 API_HASH = "3022e575059ce68696f4fa4120ae33a2"
-BOT_TOKEN = "2126565035:AAGtqOVPaXnPRDkL3MpkB-tGRd3rW8cXxOU"
+BOT_TOKEN = "2110114211:AAFs7FfwFd1QFUyruBN-KpCE4d30KV4boXI "
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
