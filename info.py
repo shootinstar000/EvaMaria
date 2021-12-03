@@ -51,7 +51,7 @@ FILE_CAPTION = """
 <code>
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 """
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001437481802 ))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1001437481802"))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'bratflix')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
