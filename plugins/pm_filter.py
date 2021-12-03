@@ -25,7 +25,7 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 SPELL_CHECK = {}
-START_MSG = "YOU CAN SEARCH ONLY USING INLINE MODE OF THE BOT!\n\nCLICK BELLOW TO SEARCH👇"
+START_MSG = "YOU CAN SEARCH ONLY USING INLINE MODE OF THE BOT!\n\n👇CLICK BELLOW TO SEARCH"
 
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(AUTH_USERS) if AUTH_USERS else filters.text & filters.private & filters.incoming)
 async def filter(client, message):
@@ -39,7 +39,7 @@ async def filter(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat='qry'),
+                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=qry),
                         InlineKeyboardButton("Request / Report", url="https://t.me/+OS6KCS7d8G4wOWE1")
                     ]
                 ]
