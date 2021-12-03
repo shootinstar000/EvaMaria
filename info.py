@@ -47,9 +47,8 @@ FILE_CAPTION = """
 <br> 
 👉[Click here](https://t.me/screenshotit_bot) to know the language of the file
 ✪༺ ──•◈•─ ─•◈•──༻✪
-<code>Join [bratflix ](https://t.me/bratflix) for more useful backup</b> 
+<code>👉 [@bratflix ](https://t.me/bratflix) for more useful backup</b> 
 <code>
-🎗️ ʝσιи 🎗️ ѕнαяє🎗️ ѕυρρσят 🎗️ 
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 """
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001437481802 ))
