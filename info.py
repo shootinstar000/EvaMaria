@@ -39,14 +39,13 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Bratflix_files')
 # Others
 FILE_CAPTION = """
 <b>{file_name}</b> 
-<br>
 ┏━━━━━━━━━━━━━━┓
  ➠Size: {file_size} 
 ┗━━━━━━━━━━━━━━┛ 
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰ 
+📌If u see 👉 <b>_PART_0001 or _PART_0002</b> at the end of file name then don't download the file Search different files
 <br> 
 👉[Click here](https://t.me/screenshotit_bot) to know the language of the file
-<br>
 ✪༺ ──•◈•─ ─•◈•──༻✪
 <code>Join [bratflix ](https://t.me/bratflix) for more useful backup</b> 
 <code>
