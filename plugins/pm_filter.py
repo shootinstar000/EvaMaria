@@ -29,7 +29,7 @@ START_MSG = "YOU CAN SEARCH ONLY USING INLINE MODE OF THE BOT!\n\nCLICK BELLOW T
 
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(AUTH_USERS) if AUTH_USERS else filters.text & filters.private & filters.incoming)
 async def filter(client, message):
-   qry=message.text
+    qry=message.text
     if message.text.startswith("/"):
         return
     await message.reply_text(
